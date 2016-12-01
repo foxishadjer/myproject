@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  poste: MyString
+  descripotion_p: MyText
+  lieu: MyString
+  ceitere: MyText
+  date_pub: 2016-11-28
+  duree: MyString
+
+two:
+  poste: MyString
+  descripotion_p: MyText
+  lieu: MyString
+  ceitere: MyText
+  date_pub: 2016-11-28
+  duree: MyString

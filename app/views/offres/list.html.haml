@@ -1,0 +1,7 @@
+#jobs
+	-@offres.each do |offre|
+		.job
+			%h2= link_to offre.poste
+			%p= offre.lieu
+			%p= offre.date_pub
+=link_to "Nouvelle offre", new_offre_path

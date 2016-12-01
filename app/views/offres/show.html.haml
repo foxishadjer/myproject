@@ -1,0 +1,26 @@
+#jobs
+	.job
+		%h1= @offre.poste
+		%p= "Description de poste: " +@offre.descripotion_p
+		%p= "Secteur d\'activité: " +@profil.secteur.name
+		%p= "Lieu du travail: " +@offre.lieu
+		%p= "Critères de selection: " +@offre.ceitere
+		%p= "Tel: " +@profil.tel.to_s
+		%p= "Email: " +@profil.email
+		%p= "Adresse: " +@profil.adresse
+		%p= "La société: " +@profil.societe
+		%p= "Date de publication: " +@offre.date_pub.to_s
+		%p= "Durée de l\'offre: " +@offre.duree
+#links
+	=link_to "Profil", @profil,class: "btn btn-sm btn-default"
+	=link_to "Modifer", edit_offre_path(@offre),class: "btn btn-sm btn-default"
+	=link_to "Supprimer", offre_path(@offre), method: :delete, data: { confirm: "êtes vous sur? "},class: "btn btn-sm btn-default"
+	=link_to "Ajouter une offre", new_offre_path,class: "btn btn-sm btn-default"
+
+
+
+
+
+
+
+

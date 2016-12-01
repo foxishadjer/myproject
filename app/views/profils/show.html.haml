@@ -1,0 +1,19 @@
+#jobs
+	.job
+		%h1= @profil.societe
+		%p= "Logo: "
+		%p= image_tag @profil.avatar(:thumb)
+		%p= "Secteur d\'activité: " +@secteur.name
+		%p= "Tel: " +@profil.tel.to_s	
+		%p= "Email: " +@profil.email
+		%p= "Adresse: " +@profil.adresse
+		%p= "Description: " +@profil.description
+#links
+	=link_to "Accueil", root_path, class: "btn btn-sm btn-default"
+	=link_to "Modifier", edit_profil_path(@profil), class: "btn btn-sm btn-default"
+	=link_to "Supprimer", profil_path(@profil), method: :delete, data: { confirm: "êtes vous sur? "}, class: "btn btn-sm btn-default"
+	=link_to "Ajouter une offre", new_offre_path, class: "btn btn-sm btn-default"
+	=link_to "Voir toutes les offres", "/offres/index", class: "btn btn-sm btn-default"
+
+
+
