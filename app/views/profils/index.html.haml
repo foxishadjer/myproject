@@ -1,0 +1,9 @@
+#jobs
+	-@profils.each do |p|
+		.job
+			%h2= link_to p.societe, p
+			%p= image_tag p.avatar(:thumb)
+			%p= p.secteur.name
+			%p= p.adresse
+			%p= p.description
+=link_to "Nouveau profil", new_profil_path

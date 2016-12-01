@@ -1,0 +1,22 @@
+!!!
+%html
+%head
+	%title Wadiftek
+	= csrf_meta_tags 
+	= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+	= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' 
+
+%body
+	%nav.navbar.navbar-default
+		.container
+			.navbar-brand Wadiftek
+			%ul.nav.navbar-nav
+				%li= link_to "Tous les offreurs", root_path
+				- Secteur.all.each do |secteur|
+					%li= link_to secteur.name, profils_path(secteur: secteur.name)
+			= link_to "Nouveau profil", new_profil_path, class: "navbar-text navbar-right navbar_link"
+			= link_to "Toutes les offres", "/offres/list", class: "navbar-text navbar-right navbar_link"
+	.container
+		.col-md-6.col-md-offset-3
+			= yield
+

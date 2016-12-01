@@ -1,0 +1,9 @@
+=simple_form_for(@offre, html: {class: 'form-horizontal'}) do |o|
+	=o.input :poste, label: "Titre du poste", input_html:{class: "form-control"}
+	=o.input :descripotion_p, label: "Description du post", input_html:{class: "form-control"}
+	=o.input :lieu, label: "Lieu du travail", input_html:{class: "form-control"}
+	=o.input :ceitere, label: "Critères de Selection", input_html:{class: "form-control"}
+	=o.input :date_pub, label: "Date de publication"
+	=o.input :duree, label: "Durée de l'offre", input_html:{class: "form-control"}
+	%br/
+	=o.button :submit
