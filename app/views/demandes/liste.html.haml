@@ -1,0 +1,9 @@
+= link_to "Nouvelle demande", new_demande_path
+%h1 les demandes d'emploi
+
+#jobs
+	- @demande.each do |demande|
+		.job
+			
+			%p= link_to demande.description, demande
+			

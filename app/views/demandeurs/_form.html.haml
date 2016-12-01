@@ -1,0 +1,8 @@
+=simple_form_for(@demandeur, html: {class: 'form-horizontal'}) do |f|
+	=f.input :nom, label: "Nom : ", maxlength: "15"
+	=f.input :prenom, label: "prenom : ", maxlength: "15", inline_label: 'Yes, remember me'
+	=f.input :tel, label: "numéro tel : "
+	=f.input :email, label: "Email : ", placeholder: "name@domaine.com"
+	=f.input :adresse, label: "Adresse : ", maxlength: "30"
+	=f.input :description, label: "description : "
+	=f.button :submit, "Valider "

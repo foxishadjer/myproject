@@ -1,0 +1,10 @@
+
+%h1= @demandeur.nom+ " "+@demandeur.prenom
+%p= @demandeur.description
+%p= @demandeur.email
+%p= @demandeur.tel
+%p= @demandeur.adresse
+#links
+ = link_to "Retour", root_path, class: "btn btn-sm btn-default"
+ = link_to "Modifier", edit_demandeur_path(@demandeur), class: "btn btn-sm btn-default"
+ = link_to "Suprimer", demandeur_path(@demandeur), method: :delete, data: { confirm: "are you sure?" }, class: "btn btn-sm btn-default"

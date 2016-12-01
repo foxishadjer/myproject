@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  titre_diplome: MyString
+  date_obtention: 2016-11-28
+  universite: MyString
+
+two:
+  titre_diplome: MyString
+  date_obtention: 2016-11-28
+  universite: MyString

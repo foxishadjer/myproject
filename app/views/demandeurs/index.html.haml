@@ -1,0 +1,7 @@
+= link_to "Nouveau demandeur ", new_demandeur_path, class: "navbar-text navbar-right navbar-link"
+%h1 les demandeurs d'emploi 
+#jobs
+	- @demandeurs.each do |demandeur|
+		.job
+			%h3= link_to demandeur.nom+ " "+demandeur.prenom, demandeur
+			%p= demandeur.description

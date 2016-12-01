@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nom_entreprise: MyString
+  titre_poste: MyText
+  date_d: 2016-11-28
+  date_f: 2016-11-28
+
+two:
+  nom_entreprise: MyString
+  titre_poste: MyText
+  date_d: 2016-11-28
+  date_f: 2016-11-28

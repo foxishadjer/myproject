@@ -1,0 +1,19 @@
+!!!
+%html
+%head
+	%title Ruby on Rails demandeur
+	= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+	= javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+	= csrf_meta_tags 
+%body
+	%nav.navbar.navbar-default
+		.container
+			.navbar-brand Wadiftek
+			%ul.nav.navbar-nav
+				%li= link_to "Demandeurs ", root_path
+				
+				
+				= link_to "Demandes", "/demandes/liste", class: "navbar-text navbar-right navbar-link"
+	.container
+		.col-md-6.col-md-offset-3
+		= yield
